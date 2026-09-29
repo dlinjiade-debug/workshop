@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1d3766">
+<meta name="description" content="解题工坊 · 单元练习">
+<title>单元练习 · 解题工坊</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%231d3766'/%3E%3Cpath d='M6 8h12M6 12h8M6 16h5' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/workshop.css?v=1">
+</head>
+<body data-page="unit">
+
+<header class="w-topbar">
+  <a class="w-brand" href="index.html">
+    <span class="w-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 6h14M5 12h9M5 18h5"/><path d="m15.5 15.5 2.5 2.5 4-4.5" transform="translate(-1.5,1)"/></svg></span>
+    <span>解题工坊</span>
+  </a>
+  <div class="w-topbar-spacer"></div>
+  <a class="w-home-link" href="index.html">← 返回知识点列表</a>
+</header>
+
+<div class="w-layout">
+  <aside class="w-rail">
+    <h4>知识点</h4>
+    <nav class="w-rail-units" id="railUnits"></nav>
+
+    <h4>难度</h4>
+    <nav class="w-diff" id="railDiff"></nav>
+
+    <div class="w-rail-progress">
+      <p id="railCount">已做 0 / 0 题</p>
+      <div class="w-meter"><i id="railMeter" style="width:0"></i></div>
+    </div>
+
+    <h4>本题号</h4>
+    <nav class="w-qnav" id="qnav" aria-label="题目导航"></nav>
+
+    <div class="w-rail-tools">
+      <button type="button" data-act="clear">清空本档记录</button>
+    </div>
+  </aside>
+
+  <main class="w-stage">
+    <div class="w-stage-head">
+      <div>
+        <h1 id="unitTitle">加载中…</h1>
+        <p id="unitMeta"></p>
+      </div>
+    </div>
+    <p id="unitBrief" style="margin:-6px 0 18px;color:#64748b;font-size:14px"></p>
+
+    <div id="stage"></div>
+
+    <nav class="w-navbar" aria-label="题目切换">
+      <button type="button" class="w-btn" id="btnPrev" data-act="prev">← 上一题</button>
+      <span class="w-spacer"></span>
+      <span class="w-pos" id="posLabel"></span>
+      <span class="w-spacer"></span>
+      <button type="button" class="w-btn" id="btnNext" data-act="next">下一题 →</button>
+    </nav>
+  </main>
+</div>
+
+<script src="js/ws-core.js?v=1"></script>
+<script src="js/ws-data-u1.js?v=1"></script>
+<script src="js/ws-data-u2.js?v=1"></script>
+<script src="js/ws-data-u3.js?v=1"></script>
+<script src="js/ws-app.js?v=1"></script>
+</body>
+</html>
